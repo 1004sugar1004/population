@@ -1,0 +1,5 @@
+{
+  "name": "인구구성변화",
+  "description": "An interactive web application that visualizes the changes in South Korea's population composition by age group from 1960 to 2072 using an animated pie chart. Users can save, compare, and export charts for different years.",
+  "requestFramePermissions": []
+}
