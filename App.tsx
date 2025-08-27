@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { PRELOADED_DATA } from './constants';
 import type { PopulationData, SavedChart } from './types';
