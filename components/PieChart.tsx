@@ -14,8 +14,8 @@ interface PieChartProps {
 
 const PieChart: React.FC<PieChartProps> = ({ data, isMainChart = false }) => {
   const ref = useRef<HTMLDivElement>(null);
-  // FIX: Used PieArcDatum type from d3-shape.
-  const dataRef = useRef<PieArcDatum<{ name: string; value: number }>[]>();
+  // FIX: Explicitly initialize useRef with undefined to resolve a potential TypeScript compiler error with complex generic types.
+  const dataRef = useRef<PieArcDatum<{ name: string; value: number }>[] | undefined>(undefined);
   const [dimensions, setDimensions] = useState<{ width: number; height: number } | null>(null);
 
   // Setup ResizeObserver to make chart responsive
